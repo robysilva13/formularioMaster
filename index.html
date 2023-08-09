@@ -1,21 +1,59 @@
-<html>
+<!DOCTYPE html>
+<html lang="pt">
 <head>
-<title>Exercício</title>
-<script type="text/JavaScript">
-function aviso() {  
-alert("Os seus dados irão ser protegidos por uma senha.")
-}  
-function load() {  
-var botao = document.getElementById("proteger");  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criação de formulario</title>
+    <style>
 
-botao.addEventListener("click", aviso, false);  
-}  
-</script>  
+      div.form{
+        padding: 100px 100px;
+        position:absolute;
+        background-color: blue;
+        left: 34%;
+        top: 10%;
+        float: left;
+        box-shadow: 0px 3px 10px 8px black;
+        border: 2px solid black;
+        
+      }
+      
+      h1{
+        text-align: center;
+      }
+
+        
+    </style>
 </head>
+
 <body onload="load();">
-<input type="text" id="campo" name="campo" value=""
-placeholder="Campo de texto"/>
+
+ <div class="form">
+
+   <h1>Login</h1>
+
+Email: <input type="email" id="campo" name="campo" value=""
+placeholder="cria13@gmail.com"/> <br> <br>
+
+ Senha: <input type="password" id="campo" name="campo" value=""
+placeholder="*******"/> <br> <br>
+
 <input type="checkbox" id="proteger" name="proteger"
 value="proteger os dados" /> Proteger os dados.
+
+</div> 
+
+<script type="text/JavaScript">
+    
+    function aviso() {  
+    alert("Os seus dados irão ser protegidos por uma senha.")
+    }  
+    function load() {  
+    var botao = document.getElementById("proteger");  
+    
+    botao.addEventListener("click", aviso, false);  
+    }  
+    </script> 
 </body>
 </html>
+    
