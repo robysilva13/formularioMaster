@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>Exercício</title>
+<script type="text/JavaScript">
+function aviso() {  
+alert("Os seus dados irão ser protegidos por uma senha.")
+}  
+function load() {  
+var botao = document.getElementById("proteger");  
+
+botao.addEventListener("click", aviso, false);  
+}  
+</script>  
+</head>
+<body onload="load();">
+<input type="text" id="campo" name="campo" value=""
+placeholder="Campo de texto"/>
+<input type="checkbox" id="proteger" name="proteger"
+value="proteger os dados" /> Proteger os dados.
+</body>
+</html>
